@@ -1,0 +1,12 @@
+services:
+  jbl-web-test:
+    container_name: jbl-web-test
+    image: jaiobs/jbl-web:test
+    ports:
+      - 4201:4200
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '40k'
+        max-file: '20'
+    restart: always

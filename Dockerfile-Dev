@@ -1,0 +1,14 @@
+FROM node:20-alpine AS build
+RUN mkdir -p /app
+WORKDIR /app 
+ADD package*.json /app/ 
+RUN npm install
+COPY . /app/
+# change build env for each environments
+RUN npm run devBuild
+
+FROM nginx:1.15
+RUN rm /etc/nginx/conf.d/default.conf 
+ADD nginx/conf.d/ /etc/nginx/conf.d/ 
+COPY --from=build /app/build/ /usr/share/nginx/html
+EXPOSE 4200

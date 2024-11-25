@@ -1,0 +1,12 @@
+services:
+  jbl-web-dev:
+    container_name: jbl-web-dev
+    image: jaiobs/jbl-web:dev
+    ports:
+      - 4200:4200
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '40k'
+        max-file: '20'
+    restart: always
