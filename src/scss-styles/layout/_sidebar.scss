@@ -1,0 +1,49 @@
+.dashboard-root--layout {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    overflow-y: hidden;
+    font-family: "CircularStd" , sans-serif;
+    &-sidebar {
+        background: rgb(255, 255, 255) !important;
+    }
+}
+
+.demo-logo-vertical {
+    height: 63px;
+    border-bottom: 1px solid #EFEFEF;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+
+    & > img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+}
+.ant-menu-item {
+    margin: 0 !important;
+    width: 100% !important;
+    border-left: 5px solid transparent !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.24px;
+    color: #000;
+    padding: 1.7rem .9rem !important;
+
+}
+
+.ant-menu-item:hover {
+    background: #EBF8FF !important;
+}
+
+.ant-menu-item-selected {
+    border-radius: 0 !important;
+    border-left: 5px solid #3AB4FD !important;
+    color: #3AB4FD !important;
+    background: #EBF8FF !important;
+    font-weight: 700 !important;
+  }

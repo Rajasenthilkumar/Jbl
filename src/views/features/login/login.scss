@@ -1,0 +1,24 @@
+.custom-segmented .ant-segmented-item-selected {
+    background-color: #03befc !important; 
+    color: #ffffff !important; 
+    font-weight: bold !important;
+  }
+  
+  .custom-segmented .ant-segmented-item {
+    background-color: #ffffff; 
+    color: #000000;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 16px;
+    
+  }
+
+  .custom-segmented .ant-segmented-item:hover {
+    background-color: #f0f0f0; 
+    color: #000000; 
+  }
+
+  .custom-segmented .ant-segmented-item + .ant-segmented-item {
+    margin-left: 10px; /* Add a left margin to the second button for spacing */
+  }
+  

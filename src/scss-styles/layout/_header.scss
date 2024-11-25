@@ -1,0 +1,53 @@
+
+.main_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #EFEFEF;
+    font-family: "CircularStdBook" , sans-serif !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 3rem;
+
+    &__left {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22.77px;
+    }
+
+    &__right {
+
+        &-notification {
+            height: 35px;
+            width: 35px;
+            border-radius: 100%;
+            background: #F6F6F6;
+            display: flex;
+            justify-content: center;
+
+            &--btn {
+                height: 35px;
+                width: 35px;
+                border-radius: 100% !important;
+                border: none !important;
+                outline: none !important;
+                background: transparent !important;
+                padding: 4px !important;
+            }
+        }
+    }
+}
+
+.iconTrue {
+    filter: saturate(40);
+}
+
+// .iconFalse {
+//     filter: saturate(0);
+// }

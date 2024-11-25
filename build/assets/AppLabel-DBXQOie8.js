@@ -1,0 +1,1 @@
+import{j as e}from"./index-BD9lYu5U.js";const r=({children:s,label:t})=>e.jsxs("div",{children:[e.jsxs("div",{className:"text-sm font-medium capitalize text-Grey",children:[" ",t," "]}),s]});export{r as A};

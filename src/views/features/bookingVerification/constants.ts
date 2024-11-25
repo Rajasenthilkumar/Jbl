@@ -1,0 +1,1 @@
+export const BOOKING_VERIFICATION_FORM = 4;

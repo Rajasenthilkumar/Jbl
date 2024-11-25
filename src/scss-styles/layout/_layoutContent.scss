@@ -1,0 +1,48 @@
+.content__section {
+    background: #EBF8FF;
+}
+
+.main__content {
+    margin: 2rem 2rem;
+    background: white;
+    border-radius: 10px;
+
+    &-body {
+        padding: 1.3rem;
+        height: 100%;
+        background: #fff;
+        border-radius: 20px;
+        overflow-y: auto;
+    }
+}
+
+.booking_content {
+    border-radius: 10px;
+    margin: 1rem 8rem;
+
+    &-body {
+        padding: 1.3rem;
+        height: 100%;
+        border-radius: 20px;
+        overflow-y: auto;
+    }
+}
+
+.main__content:has(.host-dashboard),
+.main__content-body:has(.host-dashboard) {
+    background : transparent;
+    padding: 0.35rem;
+}
+
+.tag-clearbg {
+    background-color: #C2FFB0;
+    margin-top: 10px ;
+    border: none;
+    font-weight: 500;
+}
+
+.tag-otherbg {
+    background-color: #CFEEFF;
+    border: none;
+    font-weight: 500;
+}

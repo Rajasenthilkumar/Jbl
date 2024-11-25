@@ -1,0 +1,2 @@
+export const TOTAL_JURISTIC_ENTITY_STEPS = 3;
+export const TOTAL_INDIVIDUAL_STEPS = 3;

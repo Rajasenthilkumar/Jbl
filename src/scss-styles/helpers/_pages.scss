@@ -1,0 +1,146 @@
+.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture .ant-upload-list-item-error,
+:where(.css-dev-only-do-not-override-1pey0rj).ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-error,
+:where(.css-dev-only-do-not-override-1pey0rj).ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-error {
+    border-color: transparent;
+}
+
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-actions .ant-upload-list-item-action.ant-btn,
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-name {
+    display: none;
+}
+
+.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture .ant-upload-list-item-error {
+    position: relative;
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.edit-custom-btn {
+    position: absolute;
+    bottom: 190px;
+    left: 21%;
+    z-index: 99999999;
+}
+
+.delete-btn {
+    margin-left: 10px;
+}
+
+.editinfo-form-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: 28rem;
+    margin-top: 0px;
+        .fullname-info {
+            padding: 4px 11px;
+        }
+    .editinfo {
+        flex: 1;
+        overflow: auto;
+        margin-top: 115px;
+    }
+
+    .creditcardinfo {
+        margin-top: 0px;
+        height: calc(100vh - 175px);
+    }
+}
+
+.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture .ant-upload-list-item {
+    border-radius: 8px;
+    border: 4px solid #fff;
+    width: 100px;
+    height: 100px;
+    gap: 0px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.ant-upload-list-item-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 47%;
+    top: 56px;
+    z-index: 9999999999;
+}
+
+.card-header-details {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    &.review-card-header {
+    padding: 0px;
+    .view-detail-link {
+        margin-left: 50px;  
+    }
+
+}
+    .card-detail-heading {
+        color: #3AB4FD;
+        font-size: 15px;
+        font-weight: 700;
+        margin: auto 0px;
+    }
+}
+
+.card-header-details.custom-card-header.company-detail-header {
+    padding-bottom: 0px;
+}
+
+.card-header-details.custom-card-header.bank-detail-header {
+    .add-history-button {
+        margin-left: 10px;
+    }
+}
+
+.payment_history_feature {
+    .route_heading {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 450px;
+        display: flex;
+    }
+}
+
+.payment-route {
+    position: relative;
+
+    .route_heading {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000;
+    }
+}
+
+.custom-class:has(.edit-info-modal.profile-modal-custom) ,
+.custom-class:has(.edit-info-modal.emergency-modal),
+.custom-class:has(.company-detail-modal),
+.custom-class:has(.edit-info-modal.credit-card-info-modal) {
+    overflow: visible !important;
+}
+
+.ant-drawer-body:has(.edit-info-modal.profile-modal-custom) {
+padding: 0px 20px;
+}
+
+.website-details  {
+    .ant-input-group-wrapper-outlined .ant-input-group-addon {
+    background: transparent;
+    border: 0;
+    }
+    .ant-input-group .ant-input {
+        border: 0px;
+    }
+}

@@ -1,0 +1,186 @@
+// Use the new @use syntax instead of @import
+@use "./scss-styles/components/buttons" as buttons;
+@use "./scss-styles/layout/sidebar" as sidebar;
+@use "./scss-styles/layout/header" as header;
+@use "./scss-styles/layout/layoutContent" as layoutContent;
+@use "./scss-styles/layout/bookings" as bookings;
+@use "./scss-styles/layout/drawer" as drawer;
+@use "./scss-styles/antd_reset" as antd_reset;
+@use "./scss-styles/layout/forms" as forms;
+@use "./scss-styles/reset/color" as color;
+@use "./scss-styles/helpers/helpers" as helpers;
+@use "./scss-styles/responsive" as responsive;
+@use "./scss-styles/helpers/pages" as pages;
+@use "./scss-styles/layout/table" as table;
+@use "./scss-styles/helpers/variables" as variables;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "CircularStdBold";
+    src: url("assets/fonts/circular-std/CircularStd-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CircularStdBook";
+    src: url("assets/fonts/circular-std/CircularStd-Book.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CircularStdBlack";
+    src: url("assets/fonts/circular-std/CircularStd-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CircularStdMedium";
+    src: url("assets/fonts/circular-std/CircularStd-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CircularStd-Bolditalic";
+    src: url("assets/fonts/circular-std/CircularStd-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CircularStdItalic";
+    src: url("assets/fonts/circular-std/CircularStd-BookItalic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CircularStdBlackitalic";
+    src: url("assets/fonts/circular-std/CircularStd-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CircularStdMediumitalic";
+    src: url("assets/fonts/circular-std/CircularStd-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+/****** scroll bar css *****************/
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+  }
+  
+  *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #3AB4FD;
+    border-radius: 0;
+  }
+   /****** scroll bar css *****************/
+  body {
+    font-family: "CircularStd", sans-serif;
+}
+
+.main__content-body:has(.table-container) {
+    overflow-y: hidden;
+}
+
+.ant-drawer .ant-drawer-content {
+    font-family: "CircularStdBook" , sans-serif;
+}
+
+.ant-collapse .ant-collapse-content>.ant-collapse-content-box{
+    padding: 0px;
+    border-top: 0px;
+}
+.ant-checkbox-wrapper {
+    padding: 10px 0px 10px 10px;
+}
+
+.ant-input-group-wrapper {
+    width: 100%;
+    padding: 10px;
+}
+
+.ant-input-group-addon {
+    display: none !important;
+}
+
+.ant-input-search .ant-input-affix-wrapper {
+    height: 40px;
+    background-color: #F3F3F3;
+}
+
+.ant-collapse>.ant-collapse-item >.ant-collapse-header {
+    border: 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ant-collapse,.ant-collapse .ant-collapse-content {
+    border: 0px;
+    background-color: white;
+}
+
+
+.ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+    border: 1px solid #D0D5DD;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0px !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header,
+.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    border: 1px solid #D0D5DD;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #EAF7FF;
+    color:#000000;
+    font-weight: 500;
+    flex-direction: row-reverse;
+}
+
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+    border-radius: 6px;
+}
+
+.footer-filter {
+    box-shadow: 0px -4px 20px 0px #0000001A;
+    left: 0px;
+}
+
+.draggable-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add space between items */
+    transition: box-shadow 0.2s ease;
+}
+
+.draggable-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .draggable-item:has(.total-host-netprofit) {
+            height: calc(100vh - 340px);
+    }
+
+.bed-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}       

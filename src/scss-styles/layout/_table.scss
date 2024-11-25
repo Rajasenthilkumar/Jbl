@@ -1,0 +1,79 @@
+.rating_tag {
+    border: 1px solid #55b938 !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-weight: 700 !important;
+    background: #fff !important;
+}
+
+.protectionStatus_tag {
+    border-radius: 30px !important;
+    background: #cfefc6 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+}
+
+::-webkit-scrollbar {
+    width: 12px !important;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(187, 187, 187, 0.222) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185) !important;
+    outline: none !important;
+    border-radius: 20px;
+    height: 12px !important;
+}
+
+ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-do-not-override-1bajout {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+:where(.css-dev-only-do-not-override-1bajout).ant-pagination {
+    border-radius: 100% !important;
+}
+
+ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-do-not-override-1bajout > li {
+    border-radius: 100% !important;
+    border: 1px solid #3AB4FD !important;
+}
+
+ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-do-not-override-1bajout > li a {
+    color: #3AB4FD;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    background: #3AB4FD !important;
+}
+
+li.ant-pagination-item.ant-pagination-item-active > a {
+    color: #fff !important;
+}
+
+th.ant-table-cell.ant-table-cell-fix-left, th.ant-table-cell {
+    background: #EBF8FF !important;
+    padding: 9px 8px !important;
+    font-size: 12.5px;
+}
+
+td.ant-table-cell.protectionStatus > .ant-table-cell-row-hover {
+    background: transparent !important;
+}
+
+.booking__feature-table.payment_history_table {
+.ant-table-cell a {
+    color : #3AB4FD;
+}
+}
+.ant-table-wrapper.booking__feature-table.payment_history_table {
+ .ant-table-body{
+    overflow: auto;
+    min-height: calc(100vh - 345px);
+}
+}

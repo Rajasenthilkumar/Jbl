@@ -1,0 +1,5 @@
+export enum DepositType {
+  REFUNDABLE_SECURITY_DEPOSIT_ONLY = 1,
+  NON_REFUNDABLE_DAMAGE_WAIVER_ONLY = 2,
+  BOTH = 3,
+}

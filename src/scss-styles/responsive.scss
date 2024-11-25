@@ -1,0 +1,516 @@
+/*==========Mobile Device=================*/
+@media (max-width: 767px) {
+.tableData {
+    th,
+    td {
+      white-space: nowrap;
+    }
+  }
+
+  .fixed-header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .profile-content .bank-credit-card-classname .edit-btn {
+    margin-left: 0px;
+  }
+
+  .profile-card-details {
+    margin-top: 0px;
+    min-height: calc(100vh - 400px);
+    max-height: calc(100vh - 860px);
+  }
+
+  .profile-content .profile-grid {
+    height: 95px;
+  }
+
+  .profile-content .profile-background {
+    display: none;
+  }
+  .profile-content.guest-profile-content .profile-background {
+    display: block;
+  }
+  .fixed-header.guest-fixed-header {
+    width: 100%;
+  }
+  .profile-content .profile-header,
+  .profile-content .profile-grid {
+    background-color: transparent;
+  }
+
+  .profile-content .credit-card-headertitle {
+    font-size: 14px;
+  }
+
+  .card-detail-style {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .common-company-detail {
+    margin-left: 0px;
+  }
+
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo {
+    height: calc(100vh - 630px);
+    margin-top: 120px;
+  }
+
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo.creditcardinfo {
+    margin-top: 0px;
+  }
+
+  .payment-route .route_heading {
+    left: 20px;
+  }
+
+  .ant-table-wrapper .ant-table-cell-fix-left {
+    position: relative !important;
+  }
+
+  .card-header-details.custom-card-header.bank-detail-header .bank-detail-editbtn {
+    margin-left: 0px !important;
+    font-size: 12px;
+  }
+
+  .card-header-details.custom-card-header.bank-detail-header .add-history-button {
+    font-size: 12px;
+  }
+  .booking_content {
+    margin: 0px;
+  }
+  .mobile-view-fileupload {
+    margin-bottom: 20px;
+  }
+
+  .guest-card.profile-detail {
+    margin-top: 100px;
+  }
+  .guest-card.profile-review {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .custom-guest-list {
+    width: 100px;
+  }
+  .guest-rating-icon {
+    margin-top: 20px;
+  }
+  .main__content-body:has(.profile-content.guest-profile-content) {
+    overflow:auto;
+    }
+    .profile-content.guest-profile-content {
+      height: auto;
+    }
+    .guest-card.profile-detail {
+      margin-left: 0px;
+    }
+    .guest-profile-stays {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .upcomingstay-card-list {
+      .ant-list .ant-list-item .ant-list-item-meta {
+        display: block;
+      }
+    }
+    .main__content-body:has(.guest-dashboard-grid) {
+      overflow-x: hidden;
+    }
+    .draggable-item:has(.total-host-netprofit) {
+      height: 100% !important;
+  }
+  .doughnut-chart canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .total-amount {
+    left: 50% !important;
+    font-size: 12px !important;
+  }
+  .guest-dashboard-grid {
+    font-size: 12px;
+    h3 {
+      font-size: 12px;
+    }
+  }
+  .main__content-body:has(.guest-dashboard-grid) {
+    overflow-y: auto;
+  }
+  .ml85 {
+    margin-left: 0px !important;
+  }
+  .booking-verfication-details {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .profile-card-details {
+    margin-top: 0px;
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 260px);
+  }
+
+  .main__content-body:has(.profile-content) {
+    overflow: auto;
+  }
+
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo {
+    height: calc(100vh - 145px);
+    margin-top: 250px;
+  }
+
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo.creditcardinfo {
+    margin-top: 0px;
+  }
+
+  .custom-class:has(.edit-info-modal.emergency-modal) {
+    .h-80 {
+      height: 14rem !important;
+    }
+
+    .editinfo-form-items {
+      height: 25rem;
+      min-height: 25rem;
+      margin-top: 0px;
+    }
+    .profile-content.guest-profile-content {
+      height: auto;
+  }
+  }
+
+  .ant-table-wrapper.booking__feature-table.payment_history_table {
+    .ant-table-body {
+      min-height: calc(100vh - 45px) !important;
+    }
+  }
+  .booking_content {
+    margin: 0px;
+  }
+  .guest-profile-info {
+    height: calc(100vh - 300px);
+}
+.review-card-list{
+  height: 100%;
+}
+.guest-card.profile-detail {
+  height: 100%;
+}
+.doughnut-chart canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+.total-amount {
+  left: 50% !important;
+  font-size: 12px !important;
+}
+.draggable-item:has(.total-host-netprofit) {
+  height: 100% !important;
+}
+.guest-dashboard-grid {
+  font-size: 12px;
+  h3 {
+    font-size: 12px;
+  }
+}
+.main__content-body:has(.guest-dashboard-grid) {
+  overflow-y: auto;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo {
+    min-height: calc(100vh - 150px);
+    margin-top: 120px;
+  }
+
+  .custom-class .edit-info-modal .editinfo-form-items .editinfo.creditcardinfo {
+    margin-top: 0px;
+  }
+
+  .ant-table-wrapper.booking__feature-table.payment_history_table {
+    .ant-table-body {
+      min-height: calc(100vh - 45px) !important;
+    }
+  }
+
+  .editinfo-form-items {
+    height: 19rem;
+    min-height: 12rem;
+    margin-top: 0px;
+  }
+
+  .md-welcome-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .md-text-center {
+    text-align: center;
+  }
+
+  .table-property-switch {
+    .ant-switch .ant-switch-handle {
+      width: 15px;
+      height: 15px;
+    }
+
+    .ant-switch {
+      min-width: 35px;
+      height: 19px;
+    }
+  }
+
+  .ant-table-wrapper .ant-table {
+    width: 100%;
+  }
+
+  .ant-table-thead .ant-table-cell {
+    font-size: 12px !important;
+  }
+
+  .booking__feature--action_part,
+  .md-property-feature {
+    display: block;
+  }
+
+  .table-container col {
+    width: 200px !important;
+  }
+  .booking-table-container .col {
+    width: 100px !important;
+  }
+
+  .ant-table-wrapper .ant-table-cell-fix-left {
+    position: relative !important;
+  }
+
+  .booking__feature--action_part-right {
+    margin-top: 20px;
+  }
+  .ant-btn-lg {
+    font-size: 12px;
+  }
+  .booking_content {
+    margin: 0px;
+  }
+  .review-card-list {
+    height: 100%;
+}
+
+.guest-card.profile-detail {
+    height: 100%;
+    background-color: #fff;
+}
+.guest-profile-info {
+  height: calc(100vh - 250px);
+}
+.main__content-body:has(.profile-content.guest-profile-content) {
+  overflow:auto;
+  }
+  .profile-content.guest-profile-content {
+    height: auto;
+}
+.doughnut-chart canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+.total-amount {
+  left: 50% !important;
+  font-size: 12px !important;
+}
+.draggable-item:has(.total-host-netprofit) {
+  height: 100% !important;
+}
+.guest-dashboard-grid {
+  font-size: 12px;
+  h3 {
+    font-size: 12px;
+  }
+}
+}
+
+/*==========Tab Device=================*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .profile-content .profile-grid {
+    height: 95px;
+  }
+
+  .profile-content .profile-header .profile-ul-list {
+    margin-left: 80px;
+  }
+
+  .fixed-header {
+    position: relative;
+    width: 100%;
+    height: 135px;
+  }
+
+  .profile-content .bank-credit-card-classname .edit-btn {
+    margin-left: 25px;
+  }
+
+  .profile-content .credit-card-headertitle {
+    font-size: 14px;
+  }
+
+  .editinfo.creditcardinfo.emergency-info {
+    height: calc(100vh - 675px);
+  }
+
+  .payment-route .route_heading {
+    left: 20px;
+  }
+
+  .editinfo-form-items .editinfo {
+    max-height: calc(100vh - 775px);
+  }
+
+  .card-header-details.custom-card-header.bank-detail-header .bank-detail-editbtn {
+    font-size: 12px;
+    margin-left: 5px !important;
+  }
+
+  .profile-card-details {
+    margin-top: 40px;
+    height: calc(100vh - 200px);
+    padding: 0px 10px;    
+  }
+
+  .booking_content {
+    margin: 0px;
+  }
+.review-card-list.guest-profile-rating  {
+  margin-top: 45px;
+}
+.fixed-header.guest-fixed-header {
+  width: 100%;
+}
+.guest-profile-info {
+  height: auto;
+}
+.guest-card.profile-detail {
+  height: calc(100vh - 0px);
+}
+.sm\:px-24 {
+  padding-left: 4rem !important;
+  padding-right: 1rem !important;
+}
+.ant-btn-lg {
+  font-size: 12px;
+}
+.doughnut-chart canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+.total-amount {
+  left: 50% !important;
+  font-size: 12px !important;
+}
+.draggable-item:has(.total-host-netprofit) {
+  height: 100% !important;
+}
+.guest-dashboard-grid {
+  font-size: 12px;
+  h3 {
+    font-size: 12px;
+  }
+}
+}
+
+/*==========Medium Device=================*/
+
+@media (max-width: 993px) {}
+
+
+@media (min-width: 1024px) {
+  // .upcomingstay-card-list .tab-view-block {
+  //   display: block !important;}
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+  .custom-carousel {
+    width: 200px;
+  }
+
+  .md-login-form-detail {
+    width: 300px;
+  }
+
+  .sm\:px-24 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .booking__feature--action_part,
+  .md-property-feature {
+    display: flex;
+  }
+
+  .table-property-switch .ant-switch .ant-switch-handle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .table-property-switch .ant-switch {
+    min-width: 35px;
+    height: 19px;
+  }
+
+  .ant-layout-content.main__content {
+    .ant-table-body {
+      max-height: calc(-40px + 100vh) !important;
+    }
+  }
+
+  .main__content-body:has(.table-container), .main__content-body:has(.booking-table-container) {
+    overflow-y: auto !important;
+  }
+  .ant-btn-lg {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+  .ant-layout-content.main__content {
+    .ant-table-body {
+      max-height: calc(-40px + 100vh) !important;
+    }
+  }
+
+  .table-property-switch .ant-switch .ant-switch-handle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .table-property-switch .ant-switch {
+    min-width: 30px;
+    height: 19px;
+  }
+
+  .main__content-body:has(.table-container),.main__content-body:has(.booking-table-container) {
+    overflow-y: auto !important;
+  }
+  .ant-btn-lg {
+    font-size: 12px;
+  }
+}
+
+.toggle-sidebar-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-sidebar-btn {
+    display: block; 
+  }
+  .dashboard-root--layout-sidebar {
+    width: 50px;
+  }
+}

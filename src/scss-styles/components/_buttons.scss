@@ -1,0 +1,38 @@
+.blue__btn {
+    padding: 15px 25px !important;
+    background: #3AB4FD !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.71px;
+}
+
+.custom-button {
+    background-color: #EBF8FF;
+    border-radius: 4px;
+    border: none;
+}
+
+.guest-btn-review {    
+    background-color: #3AB4FD;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-weight: 500;
+    &:hover {
+        background-color: #fff;
+        color: #051621;
+    }
+}
+.guest-btn-card {
+    border-radius: 0px 30px 30px 0px;
+    background-color: #fff;
+    color: #051621;
+    border-width: 1px, 1px, 1px, 0px;
+    border-style: solid;
+    border-color: #E4E4E4;
+    &:hover {
+        background-color: #3AB4FD;
+        color: #fff;
+    }
+}

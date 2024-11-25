@@ -1,0 +1,744 @@
+.profile-content {
+  .profile-header {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+
+    .profile-ul-list {
+      margin-left: 0px;
+
+      .profile-name {
+        width: 500px;
+      }
+    }
+  }
+
+  .profile-background {
+    background: linear-gradient(180deg, #3ab4fd 0%, #cfedff 100%);
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0px;
+    position: relative;
+    // &.guest-profile-bg{
+    //   height: 130px;
+    // }
+  }
+
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .avatar-profile {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #3ab4fd;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 25px;
+  }
+
+  .avatar-info {
+    z-index: 1;
+    margin-top: 0px;
+    background-color: #55b938;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    font-size: 12px;
+    margin-left: 20px;
+    bottom: 10px;
+  }
+
+  .profile-grid {
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    margin: 8px 0px 0px;
+    height: 110px;
+
+    .profile-list-item {
+      margin-left: 0px;
+    }
+  }
+
+  .profile-list-item.phone-detail-item {
+    margin-left: 0px;
+    margin-top: 0px !important;
+  }
+
+  .credit-card-classname {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .bank-credit-card-classname {
+    display: flex;
+
+    .custom-button {
+      padding: 10px;
+    }
+
+    .edit-btn {
+      margin-left: 85px;
+
+      .bank-detail-editbtn {
+        margin-left: 65px;
+      }
+    }
+
+    .add-history-button {
+      margin-left: 10px;
+    }
+  }
+
+  .credit-card-headertitle {
+    margin: auto 0px;
+    color: #051621;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .sub-classname {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 15.18px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .cardlogo {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .textDetailsclassName {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 17.71px;
+    text-align: left;
+    width: 120px;
+    color: #000;
+  }
+  .websiteDetailsclassname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px dashed #40a9ff;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .inputStyleclassName {
+    border-radius: 20px;
+    padding-left: 10px;
+  }
+
+  .webSaveclassname {
+    border-radius: 5px;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .infoClassname {
+    background-color: #3ab4fd;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+
+  .cardinfoclassName {
+    display: flex;
+  }
+}
+
+.main__content:has(.profile-content) {
+  background: transparent;
+  margin: 30px;
+}
+
+.main__content-body,
+.ant-form {
+  font-family: "CircularStdBook", sans-serif !important;
+}
+
+.main__content-body:has(.profile-content) {
+  background: transparent;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.card-detail-style {
+  padding: 30px 0px 30px 0px;
+
+  .credit-card-classname {
+    border-radius: 10px;
+  }
+}
+
+.card-detail-style.credit-card-style {
+  padding-top: 0px;
+
+  .custom-creditcard {
+    padding: 0px 20px 10px;
+  }
+}
+
+.card-detail-style.emergency-card-style {
+  padding: 0px;
+}
+.custom-creditcard.bank-detailcard {
+  margin-bottom: 30px;
+}
+
+.common-company-detail {
+  margin-left: 25px;
+}
+
+.fixed-header {
+  position: fixed;
+  width: calc(100vw - 300px);
+  z-index: 999;
+  height: 170px;
+}
+
+.fixed-header.guest-fixed-header {
+  z-index: 1;
+  height: 50px;
+  width: calc(100vw - 290px);
+}
+
+.guest-card {
+  position: relative;
+  z-index: 1000;
+}
+
+.guest-card.profile-detail {
+  margin-top: 45px;
+  border: 1px solid #e4e4e4;
+  height: calc(100vh - 230px);
+  margin-left: 0px;
+  .ant-avatar {
+    border: 2px solid #fff;
+    outline: 2px solid #3ab4fd;
+  }
+}
+
+.guest-card.profile-review {
+  margin-top: 150px;
+  padding: 20px;
+  border: 1px solid #e4e4e4;
+  margin-left: 0px;
+}
+.profile-content.guest-profile-content .profile-background {
+  height: 130px;
+}
+
+.profile-body {
+  height: calc(100vh - 150px);
+  overflow: hidden;
+}
+
+.profile-card-details {
+  height: 100%;
+  overflow-y: auto;
+  padding: 12px 0px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin-top: 185px;
+  min-height: calc(100vh - 370px);
+  max-height: calc(100vh - 640px);
+
+  .bank-detail-card {
+    margin-bottom: 30px;
+  }
+
+  .custom-companycard {
+    padding: 16px 20px;
+  }
+}
+
+.textDetailsclassName.textWebDetailsclasName {
+  display: flex;
+  border: 1px dashed var(--Primary, #3ab4fd);
+  border-radius: 30px;
+  padding: 12px;
+  width: 300px;
+}
+
+.register-business .companyDetailsclassName {
+  border: 1px solid #e4e4e4;
+  display: flex;
+  width: 225px;
+  padding: 5px;
+}
+
+.profile-content .textDetailsclassName.companyDetailsclassName {
+  width: 220px;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.edit-info-modal {
+  .form-label {
+    color: #969696;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "CircularStd", sans-serif;
+  }
+
+  .ant-input:placeholder-shown {
+    color: #051621;
+  }
+
+  .ant-input-affix-wrapper > input.ant-input {
+    color: #051621;
+  }
+
+  .ant-input-outlined {
+    background: #f3f3f3;
+    border-color: #f3f3f3;
+  }
+
+  .custom-btn {
+    background-color: transparent;
+  }
+
+  .upload-btn {
+    display: inline-flex;
+    color: #3ab4fd;
+    font-weight: 500;
+
+    svg {
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+  }
+
+  .edit-info-modal-btn {
+    background-color: transparent;
+    box-shadow: none;
+    color: #3ab4fd;
+
+    .ant-btn .ant-btn-icon {
+      color: #3ab4fd;
+    }
+  }
+}
+
+.ant-drawer-footer .ant-btn.ant-btn-default.save-btn {
+  background-color: #3ab4fd;
+  color: #fff;
+}
+
+.ant-drawer-footer .ant-btn.ant-btn-default.cancel-btn {
+  background-color: #ebf8ff;
+  color: #3ab4fd;
+  margin-right: 10px;
+  border: none;
+  font-weight: 500;
+}
+
+.ant-drawer .ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
+
+.property-enter-amount {
+  .ant-select .ant-select-arrow {
+    margin-top: 0px;
+  }
+}
+
+.table-container,
+.booking-table-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.lineClassName {
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.footerLine {
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.drawerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.masterCard{
+  width: 20px;
+  height:20px;
+  display: flex; 
+  align-items: center;
+  margin-right: 8px 
+}
+
+.contentArea {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.footerclassName {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.avatar-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-profiles {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  object-fit: cover;
+}
+
+.edit-custom-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.edit-profile-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.edit-info-modal-btns {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #007bff;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.edit-info-modal-btns:hover {
+  background-color: #e6f7ff;
+}
+
+.editinfo-form-items .editinfo {
+  margin-top: 2rem !important;
+}
+
+.editinfo-form-items .editinfo .form-label {
+  font-size: 0.875rem;
+  color: #051621;
+}
+
+.footerclassName {
+  margin-top: 1.5rem;
+}
+
+.footerLine {
+  margin: 0.5rem 0;
+}
+
+.displayclassname {
+  justify-content: space-between;
+}
+
+.cancel-btn,
+.save-btn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.booking-verfication-details {
+  padding: 50px 100px;
+  .ant-divider {
+    border-block-start: 2px solid rgba(22, 44, 88, 0.09);
+  }
+  .booking-detail-form {
+    padding: 35px 60px 35px 40px;
+  }
+  .react-international-phone-country-selector {
+    height: 37px;
+  }
+  .ant-space-compact {
+    height: 38px;
+  }
+}
+
+.booking-verfication-details:has(.custom-class) {
+  .min-h-80 {
+    min-height: auto;
+    overflow-x: hidden;
+    max-height: 15rem;
+  }
+}
+
+.refund-radio {
+  .ant-space.ant-space-vertical.ant-space-gap-row-small.ant-space-gap-col-small {
+    width: 100%;
+  }
+  .ant-radio-group.ant-radio-group-outline {
+    width: 100%;
+  }
+}
+.step1-form-bookingverify {
+  .ant-input.ant-input-lg.ant-input-outlined.get-input-placeholder,
+  .ant-picker-large .ant-picker-input > input {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.verify-phone-number {
+  .ant-input.ant-input-lg.ant-input-filled.ant-input-compact-item.ant-input-compact-last-item {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
+
+.bookverify-step4-fileupload {
+  margin-right: 30px;
+}
+
+.terms_cond_style {
+  justify-content: space-between;
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.verify-phone-number {
+  .ant-input-filled.ant-input-status-error:not(.ant-input-disabled) {
+    background: #f3f3f3;
+  }
+}
+
+.custom-class-file-token .step1-form-bookingverify {
+  background: transparent !important;
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.profile-card-details.guest-profile-card-details {
+  margin-top: 0px;
+  z-index: 9999999;
+}
+
+.review-card-list {
+  height: calc(100vh - 425px);
+  overflow-y: auto;
+  .ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-title {
+    color: #051621;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  .ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-description {
+    color: #969696;
+    font-size: 13px;
+  }
+
+  .ant-list-split .ant-list-item {
+    display: block;
+  }
+
+  .guest-rating-icon {
+    align-items: center;
+    padding: 10px;
+  }
+  .ant-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .guest-profile-rating {
+    margin-top: 20px;
+  }
+  .card-icons {
+    margin: 12px 0px 0px 10px !important;
+  }
+}
+.guest-dashborad-style {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: scroll; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.main-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.guest-dashboard-right-container {
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.custom-guest-list {
+  width: 170px;
+}
+
+.guest-profile-info {
+  height: calc(100vh - 542px);
+  overflow: auto;
+}
+.profile-content.guest-profile-content {
+  height: calc(100vh - 170px);
+}
+.guest-profile-stays {
+  border-left: 20px solid #3ab4fd;
+  margin-left: 10px;
+}
+
+.main__content-body:has(.guest-dashboard-grid) {
+  background: #ebf8ff;
+  border-radius: 0px;
+  padding-top: 0px;
+  overflow-y: hidden;
+}
+.dashboard-review-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.upcomingstay-card-list {
+  .ant-avatar {
+    width: 178px;
+    height: 111px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+  }
+  .ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-content {
+    width: 100%;
+  }
+  .ant-list-split .ant-list-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .ant-list .ant-list-item {
+    display: block;
+  }
+}
+.review-status {
+  background-color: #cfefc6;
+  border-radius: 30px;
+  color: #000000;
+  padding: 2px 10px;
+  width: fit-content;
+  font-size: 12px;
+  margin-top: 10px;
+  &.review-claim-status {
+    background-color: #fcf6d8;
+    color: #ad9819;
+  }
+}
+.view-detail-margin {
+  justify-content: end;
+}
+
+.ant-modal.guestdashboard-edit-card:has(.min-h-80) {
+  .min-h-80 {
+    min-height: 9rem !important;
+  }
+  .max-h-80 {
+    max-height: 8rem;
+  }
+}
+
+.view-detail-previousstay-link {
+  margin-left: 10px;
+}
+
+.dashboard-profile-grid {
+  height: calc(100vh - 335px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main__content-body:has(.host-dashboard) {
+  overflow-y: hidden;
+}
+
+.total-host-netprofit {
+  height: calc(100vh - 365px);
+}
+
+.add-new-card-modal:has(.min-h-80) {
+  .min-h-80 {
+    min-height: 9rem !important;
+    overflow: hidden !important;
+  }
+  .max-h-80 {
+    max-height: 8rem;
+  }
+}
+.display-total {
+  border: 1px solid #E4E4E4;
+  .bg-gray {
+      background-color: #F0F0F0;
+      padding: 10px;
+  }
+  .bg-white {
+      background-color: #fff;
+      padding: 10px;
+  }
+}
+
+
